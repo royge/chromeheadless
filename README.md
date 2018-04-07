@@ -37,5 +37,3 @@ The primary purpose of the image is to be able to run `karma` for my AngularJS p
     $ chmod +x runtests.sh
     $ docker run -it -v `pwd`:/app -w=/app chromeheadless ./runtests.sh
     ```
-    
-    
