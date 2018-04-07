@@ -6,7 +6,7 @@ The primary purpose of the image is to be able to run `karma` for my AngularJS p
 
 ## Getting Started
 
-1. Pull the image
+1. Get the image
 
     **Option 1:** Pull from docker hub.
   
