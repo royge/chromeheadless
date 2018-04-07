@@ -1,6 +1,6 @@
 # chromeheadless
 
-Builds docker image based on Ubuntu 16.04(Xenial) with CURL, Node 8 and GIT.
+Builds docker image based on Ubuntu 16.04(Xenial) with Chromium browser, Node 8, CURL and GIT.
 
 The primary purpose of the image is to be able to run `karma` for my AngularJS project.
 
