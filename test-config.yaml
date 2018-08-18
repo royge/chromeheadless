@@ -5,12 +5,7 @@ commandTests:
     args: ["chromium-browser"]
     expectedOutput: ["/usr/bin/chromium-browser\n"]
 
-  - name: "chrome headless version"
-    command: "chromium-browser"
-    args: ["--version"]
-    expectedOutput: ["Chromium 65"]
-
-  - name: "chrome headless version"
+  - name: "chrome headless dump"
     command: "chromium-browser"
     args: ["--headless", "--no-sandbox", "--dump-dom"]
     expectedOutput: ["<html><head></head><body></body></html>"]
