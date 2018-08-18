@@ -1,0 +1,26 @@
+schemaVersion: '2.0.0'
+commandTests:
+  - name: "chrome headless installation"
+    command: "which"
+    args: ["chromium-browser"]
+    expectedOutput: ["/usr/bin/chromium-browser\n"]
+
+  - name: "chrome headless version"
+    command: "chromium-browser"
+    args: ["--version"]
+    expectedOutput: ["Chromium 65"]
+
+  - name: "chrome headless version"
+    command: "chromium-browser"
+    args: ["--headless", "--no-sandbox", "--dump-dom"]
+    expectedOutput: ["<html><head></head><body></body></html>"]
+
+  - name: "git installation"
+    command: "which"
+    args: ["git"]
+    expectedOutput: ["/usr/bin/git\n"]
+
+  - name: "git installation"
+    command: "which"
+    args: ["curl"]
+    expectedOutput: ["/usr/bin/curl\n"]
