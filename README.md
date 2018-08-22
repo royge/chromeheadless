@@ -26,7 +26,7 @@ The primary purpose of the image is to be able to run `karma` for my AngularJS p
 
 2. Run the container
 
-    Sample contents of `runtests.sh`
+    Create `runtests.sh` file.
 
     ```
     #!/bin/bash
@@ -35,7 +35,8 @@ The primary purpose of the image is to be able to run `karma` for my AngularJS p
     npm run test-single-run
     ```
 
+    Execute `docker run` command.
     ```
     $ chmod +x runtests.sh
-    $ docker run -it -v `pwd`:/app -w=/app chromeheadless ./runtests.sh
+    $ docker run -it -v `pwd`:/app -w=/app royge/chromeheadless ./runtests.sh
     ```
