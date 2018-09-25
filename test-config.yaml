@@ -19,3 +19,8 @@ commandTests:
     command: "which"
     args: ["curl"]
     expectedOutput: ["/usr/bin/curl\n"]
+
+  - name: "make installation"
+    command: "make"
+    args: ["--version"]
+    expectedOutput: ["GNU Make 4.1.*"]
